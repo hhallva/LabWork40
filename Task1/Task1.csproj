@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bluetooth.png" />
+    <None Remove="Images\bluetooth.png" />
+    <None Remove="Images\QR.png" />
+    <None Remove="QR.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bluetooth.png" />
+    <Resource Include="Images\bluetooth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\QR.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="QR.png" />
+  </ItemGroup>
+
+</Project>
